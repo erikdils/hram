@@ -1,0 +1,419 @@
+.donation {
+    padding: var(--section-padding);
+    background: var(--ivory);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* ===== Tabs ===== */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 56px;
+    background: var(--warm-grey);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--sand-dark);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 4px;
+}
+
+.tab {
+    padding: 13px 40px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all var(--transition-fast);
+}
+
+.activeTab {
+    background: var(--amber);
+    color: var(--white);
+}
+
+/* ===== Patronage Grid ===== */
+.patronageGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+.tierCard {
+    background: var(--white);
+    padding: 36px 28px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--warm-grey);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.tierCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--amber);
+    transform: scaleX(0);
+    transition: transform var(--transition-medium);
+    transform-origin: left;
+}
+
+.tierCard:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--sand);
+}
+
+.tierCard:hover::before {
+    transform: scaleX(1);
+}
+
+.tierEmoji {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1;
+    filter: drop-shadow(0 2px 6px rgba(164, 72, 25, 0.2));
+    transition: transform var(--transition-medium);
+}
+
+.tierCard:hover .tierEmoji {
+    transform: scale(1.15);
+}
+
+.tierName {
+    font-family: var(--font-heading);
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.tierPrice {
+    font-weight: 700;
+    color: var(--gold);
+    font-size: 17px;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.tierDesc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tierGift {
+    font-size: 13px;
+    color: var(--navy);
+    background: rgba(200, 169, 110, 0.1);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    margin-bottom: 24px;
+}
+
+.giftLabel {
+    font-weight: 600;
+    color: var(--gold-dark);
+    margin-right: 4px;
+}
+
+.tierBtn {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-fast);
+    text-decoration: none;
+}
+
+.tierCard:hover .tierBtn {
+    background: var(--gold);
+    color: var(--white);
+}
+
+/* ===== Purpose Block ===== */
+.purposeBlock {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 60px;
+    border: 1px solid var(--warm-grey);
+}
+
+.purposeTitle {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.purposeGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.purposeItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.purposeIcon {
+    color: var(--gold);
+    font-size: 18px;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* ===== Donation Form (Пожертва tab) ===== */
+.donationBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: var(--white);
+    padding: 60px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--warm-grey);
+}
+
+.formTitle {
+    font-family: var(--font-heading);
+    font-size: 26px;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.formSubtitle {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    font-size: 15px;
+}
+
+.amountGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.amountBtn {
+    padding: 14px;
+    border: 1px solid var(--warm-grey);
+    background: var(--white);
+    color: var(--navy);
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.amountBtn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.activeAmount {
+    background: var(--gold);
+    color: var(--white) !important;
+    border-color: var(--gold) !important;
+}
+
+.inputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--warm-grey);
+    border-radius: var(--radius-sm);
+    font-size: 16px;
+    color: var(--navy);
+    background: var(--white);
+    transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--gold);
+}
+
+.currency {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+/* ===== Payment Details ===== */
+.paymentCol {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.payCard {
+    background: var(--ivory);
+    border: 1px solid var(--warm-grey);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.payRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--warm-grey);
+}
+
+.payRow:last-child {
+    border-bottom: none;
+}
+
+.payLabel {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-light);
+    min-width: 90px;
+    flex-shrink: 0;
+}
+
+.payValue {
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: 500;
+    flex-grow: 1;
+    word-break: break-all;
+}
+
+.copyBtn {
+    background: transparent;
+    border: 1px solid var(--warm-grey);
+    border-radius: 4px;
+    padding: 4px 10px;
+    font-size: 14px;
+    color: var(--gold);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.copyBtn:hover {
+    background: var(--gold);
+    color: var(--white);
+    border-color: var(--gold);
+}
+
+.payMethods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.payMethodLabel {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.payMethodList {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.payMethod {
+    padding: 6px 14px;
+    background: var(--white);
+    border: 1px solid var(--warm-grey);
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px) {
+    .patronageGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .purposeGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .donationBlock {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .purposeBlock {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 680px) {
+    .patronageGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .purposeGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        width: 100%;
+    }
+
+    .tab {
+        flex: 1;
+        padding: 14px 16px;
+    }
+
+    .amountGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
