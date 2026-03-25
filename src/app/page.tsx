@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-// import Schedule from "@/components/Schedule";
 import Donation from "@/components/Donation";
 import ConstructionProgress from "@/components/ConstructionProgress";
 import OnlineServices from "@/components/OnlineServices";
