@@ -13,7 +13,7 @@ export default function Hero() {
             <div className={`container ${styles.content}`}>
                 <div className={styles.badge}>
                     <span className={styles.badgeCross}>☦</span>
-                    <span>Українська Греко-Католицька Церква</span>
+                    <span>Собор Святого великомученика Георигия переможця</span>
                 </div>
 
                 <h1 className={styles.title}>

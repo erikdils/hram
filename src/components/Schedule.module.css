@@ -39,7 +39,7 @@
 }
 
 .activeTab {
-    background: var(--amber);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -62,28 +62,29 @@
 .dayCard:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-3px);
-    border-color: rgba(200, 169, 110, 0.4);
+    border-color: var(--black);
 }
 
 .dayHeader {
-    background: var(--navy);
+    background: var(--white);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
+    border-bottom: 1px solid var(--warm-grey);
 }
 
 .dayShort {
     font-size: 28px;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--black);
     font-family: var(--font-heading);
 }
 
 .dayFull {
     font-size: 11px;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 1.5px;
 }
@@ -103,8 +104,8 @@
 }
 
 .timeTag {
-    background: rgba(200, 169, 110, 0.15);
-    color: var(--gold-dark);
+    background: rgba(226, 203, 162, 0.25);
+    color: var(--black);
     font-weight: 700;
     font-size: 13px;
     padding: 3px 8px;
@@ -147,12 +148,12 @@
 }
 
 .greatCard {
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--black);
 }
 
 .paschaCard {
-    border-left: 3px solid #C8A96E;
-    background: linear-gradient(135deg, rgba(200, 169, 110, 0.06), var(--ivory));
+    border-left: 3px solid var(--black);
+    background: linear-gradient(135deg, rgba(226, 203, 162, 0.1), var(--white));
 }
 
 .upcomingDate {
@@ -190,8 +191,8 @@
 }
 
 .greatTag {
-    background: rgba(200, 169, 110, 0.15);
-    color: var(--gold-dark);
+    background: rgba(226, 203, 162, 0.2);
+    color: var(--black);
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 0.5px;

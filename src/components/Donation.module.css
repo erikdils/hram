@@ -1,6 +1,6 @@
 .donation {
     padding: var(--section-padding);
-    background: var(--ivory);
+    background: var(--white);
 }
 
 .header {
@@ -39,7 +39,7 @@
 }
 
 .activeTab {
-    background: var(--amber);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -63,18 +63,7 @@
     overflow: hidden;
 }
 
-.tierCard::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--amber);
-    transform: scaleX(0);
-    transition: transform var(--transition-medium);
-    transform-origin: left;
-}
+
 
 .tierCard:hover {
     transform: translateY(-6px);
@@ -82,9 +71,7 @@
     border-color: var(--sand);
 }
 
-.tierCard:hover::before {
-    transform: scaleX(1);
-}
+
 
 .tierEmoji {
     font-size: 36px;
@@ -125,7 +112,7 @@
 .tierGift {
     font-size: 13px;
     color: var(--navy);
-    background: rgba(200, 169, 110, 0.1);
+    background: rgba(226, 203, 162, 0.1);
     border-radius: var(--radius-sm);
     padding: 8px 12px;
     margin-bottom: 24px;
@@ -142,8 +129,8 @@
     text-align: center;
     padding: 12px;
     background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    border: 1px solid var(--black);
+    color: var(--black);
     border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 13px;
@@ -154,7 +141,7 @@
 }
 
 .tierCard:hover .tierBtn {
-    background: var(--gold);
+    background: var(--black);
     color: var(--white);
 }
 
@@ -246,9 +233,9 @@
 }
 
 .activeAmount {
-    background: var(--gold);
+    background: var(--black);
     color: var(--white) !important;
-    border-color: var(--gold) !important;
+    border-color: var(--black) !important;
 }
 
 .inputWrapper {

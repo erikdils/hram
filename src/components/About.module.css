@@ -1,6 +1,6 @@
 .about {
     padding: var(--section-padding);
-    background: var(--ivory);
+    background: var(--sand);
 }
 
 .grid {
@@ -117,7 +117,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(200, 169, 110, 0.1), rgba(200, 169, 110, 0.05));
+    background: linear-gradient(135deg, rgba(226, 203, 162, 0.15), rgba(226, 203, 162, 0.08));
     border-radius: var(--radius-sm);
 }
 

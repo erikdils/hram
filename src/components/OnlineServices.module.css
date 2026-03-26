@@ -1,6 +1,6 @@
 .services {
     padding: var(--section-padding);
-    background: var(--ivory);
+    background: var(--sand);
 }
 
 .header {
@@ -30,7 +30,7 @@
 .card:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-md);
-    border-color: var(--gold-light);
+    border-color: var(--black);
 }
 
 .icon {
@@ -56,8 +56,8 @@
     width: 100%;
     padding: 14px;
     background: transparent;
-    border: 1px solid var(--gold);
-    color: var(--gold);
+    border: 1px solid var(--black);
+    color: var(--black);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -67,7 +67,7 @@
 }
 
 .cardBtn:hover {
-    background: var(--gold);
+    background: var(--black);
     color: var(--white);
 }
 

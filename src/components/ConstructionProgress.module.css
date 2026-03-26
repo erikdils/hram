@@ -1,5 +1,6 @@
 .progress {
     padding: var(--section-padding);
+    background: var(--white);
 }
 
 .header {
@@ -52,7 +53,7 @@
 
 .mContent {
     flex-grow: 1;
-    background: var(--ivory);
+    background: var(--white);
     padding: 24px;
     border-radius: var(--radius-md);
     border: 1px solid var(--warm-grey);
@@ -108,9 +109,10 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 40px;
-    background: var(--navy);
-    color: var(--white);
+    background: var(--sand);
+    color: var(--black);
     border-radius: var(--radius-md);
+    border: 1px solid var(--warm-grey);
 }
 
 .archTitle {
@@ -121,7 +123,8 @@
 .archText {
     font-size: 16px;
     line-height: 1.8;
-    color: rgba(255,255,255,0.8);
+    color: var(--black);
+    opacity: 0.8;
 }
 
 @media (max-width: 992px) {

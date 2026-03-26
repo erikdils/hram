@@ -16,22 +16,22 @@
   --black: #111111;
 
   /* Aliases (keeps existing component code working) */
-  --gold: #A44819;
-  --gold-light: #C45820;
-  --gold-dark: #7A3412;
-  --navy: #3E3F1F;
-  --navy-light: #525428;
-  --navy-dark: #2A2C14;
-  --ivory: #FDF8F3;
-  --warm-grey: #EDE4D6;
-  --text-dark: #111111;
+  --gold: var(--black);
+  --gold-light: var(--black);
+  --gold-dark: var(--black);
+  --navy: var(--black);
+  --navy-light: var(--forest-light);
+  --navy-dark: var(--forest-dark);
+  --ivory: var(--white);
+  --warm-grey: var(--sand);
+  --text-dark: var(--black);
   --text-muted: #5C5040;
   --text-light: #9A8878;
-  --border-light: rgba(164, 72, 25, 0.18);
+  --border-light: rgba(17, 17, 17, 0.1);
   --shadow-sm: 0 2px 8px rgba(17, 17, 17, 0.06);
   --shadow-md: 0 4px 20px rgba(17, 17, 17, 0.1);
   --shadow-lg: 0 8px 40px rgba(17, 17, 17, 0.14);
-  --shadow-gold: 0 4px 20px rgba(164, 72, 25, 0.28);
+  --shadow-gold: 0 4px 20px rgba(17, 17, 17, 0.2);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', Georgia, serif;
@@ -212,19 +212,20 @@ input {
   justify-content: center;
   gap: 8px;
   padding: 16px 36px;
-  background: var(--amber);
+  background: var(--black);
   color: var(--white);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: var(--radius-sm);
-  transition: background var(--transition-fast), transform var(--transition-fast);
-  border: none;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--black);
 }
 
 .btn-gold:hover {
-  background: var(--amber-dark);
+  background: transparent;
+  color: var(--black);
   transform: translateY(-2px);
 }
 
@@ -236,8 +237,8 @@ input {
   gap: 8px;
   padding: 14px 32px;
   background: transparent;
-  border: 2px solid var(--amber);
-  color: var(--amber);
+  border: 2px solid var(--black);
+  color: var(--black);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -247,7 +248,7 @@ input {
 }
 
 .btn-outline:hover {
-  background: var(--amber);
+  background: var(--black);
   color: var(--white);
   transform: translateY(-2px);
 }
